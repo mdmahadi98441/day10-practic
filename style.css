@@ -91,6 +91,26 @@ header{
     margin: 100px auto;
 }
 
+/* card box */
+
+.card-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    max-width: 329px;
+    max-height: 476px;
+    box-shadow: 1px 2px 3px 4px lightgray;
+    text-align: center;
+    border-radius: 10px;
+}
+.card img{
+    width: 95%;
+    padding: 5px;
+
+}
+
 /* ?media query */
 @media  screen and (max-width:576PX) {
     .navbar{
@@ -99,14 +119,21 @@ header{
     .air{
         flex-direction: column-reverse;
         align-items: center;
+        margin: 50px auto;
+        justify-items: center;
     }
     .company-conteiner{
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-items: center;
         gap: 30px;
+        margin: 100px auto;
     }
     .air-content{
         text-align: center;
+        justify-content: center;
+    }
+    .card-conteiner{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
